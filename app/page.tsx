@@ -1,9 +1,11 @@
-import { Header } from "@/components";
+import { Header, HeroSection, Services } from "@/components";
 
 export default function Home() {
   return (
-    <div className="container py-4 mx-auto">
+    <div className="container mx-auto">
       <Header />
+      <HeroSection />
+      <Services />
     </div>
   );
 }
