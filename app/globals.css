@@ -128,8 +128,7 @@
   html {
     font-family: var(--font-inter), system-ui, sans-serif;
   }
-
-  /* Headings - Playfair */
+  /* Headings - Playfair Display */
   h1,
   h2,
   h3,
@@ -138,43 +137,41 @@
   h6 {
     font-family: var(--font-playfair), serif;
     font-weight: 700;
-    line-height: 1.2;
     color: hsl(var(--foreground));
   }
 
   h1 {
-    @apply text-4xl md:text-5xl lg:text-6xl;
+    @apply text-3xl leading-tight sm:text-4xl md:text-5xl xl:text-6xl tracking-tight;
   }
 
   h2 {
-    @apply text-3xl md:text-4xl lg:text-5xl;
+    @apply text-2xl leading-snug sm:text-3xl md:text-4xl xl:text-5xl tracking-tight;
   }
 
   h3 {
-    @apply text-2xl md:text-3xl lg:text-4xl;
+    @apply text-xl leading-snug sm:text-2xl md:text-3xl xl:text-4xl;
   }
 
   h4 {
-    @apply text-xl md:text-2xl lg:text-3xl;
+    @apply text-lg leading-normal sm:text-xl md:text-2xl xl:text-3xl;
   }
 
   h5 {
-    @apply text-lg md:text-xl lg:text-2xl;
+    @apply text-base leading-normal sm:text-lg md:text-xl xl:text-2xl;
   }
 
   h6 {
-    @apply text-base md:text-lg lg:text-xl;
+    @apply text-sm leading-normal sm:text-base md:text-lg xl:text-xl font-semibold;
   }
 
   /* Paragraphs - Inter */
   p {
     font-family: var(--font-inter), system-ui, sans-serif;
-    @apply text-base md:text-lg;
-    line-height: 1.7;
+    @apply text-base leading-relaxed md:text-lg;
     color: hsl(var(--foreground));
   }
 
-  /* Spans - inherit from parent */
+  /* Spans */
   span {
     font-family: inherit;
     font-size: inherit;
@@ -185,4 +182,8 @@
 
 .container {
   @apply sm:max-w-10/12 mx-auto;
+}
+
+section {
+  @apply py-10 lg:py-20 xl:py-30 sm:px-0 px-4;
 }

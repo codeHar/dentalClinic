@@ -30,7 +30,7 @@ export const Header = () => {
   ];
 
   return (
-    <nav className="flex items-center justify-between py-4 px-4 sm:px-6 md:py-7 border-b border-gray-200 sm:border-0">
+    <nav className="flex items-center justify-between py-4 sm:px-0 px-4 md:py-7 border-b border-gray-200 sm:border-0">
       {/* Logo */}
       <Link href="/" className="flex items-center gap-2">
         <Image src="/tooth.png" alt="Logo" width={50} height={50} />

@@ -2,12 +2,12 @@ import Image from "next/image";
 
 export const Services = () => {
   return (
-    <div className="py-10 sm:py-40 sm:px-0 px-4">
-      <div className="flex flex-col gap-2 sm:gap-4 items-center justify-center">
+    <section>
+      <div className="flex flex-col gap-2 sm:gap-4 items-center justify-center text-center">
         <p>DENTAL PRACTICE</p>
         <h3>EXPLORE OUR SERVICES</h3>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
         <div className="group flex flex-col items-center gap-5 text-center">
           <div className="relative max-w-max group-hover:scale-105 transition-transform duration-150">
             <svg
@@ -97,6 +97,6 @@ export const Services = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
