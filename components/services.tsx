@@ -5,7 +5,7 @@ export const Services = () => {
     <section>
       <div className="flex flex-col gap-2 sm:gap-4 items-center justify-center text-center">
         <p>DENTAL PRACTICE</p>
-        <h3>EXPLORE OUR SERVICES</h3>
+        <h2>EXPLORE OUR SERVICES</h2>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
         <div className="group flex flex-col items-center gap-5 text-center">
