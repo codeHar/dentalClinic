@@ -1,5 +1,6 @@
 "use client";
 
+import { AnimationInfo } from "@/lib/consts";
 import clsx from "clsx";
 import Image from "next/image";
 import Link from "next/link";
@@ -7,14 +8,14 @@ import { useInView } from "react-intersection-observer";
 
 export const AboutAppointmentSection = () => {
   const { ref, inView } = useInView({
-    threshold: 0.3,
-    triggerOnce: true,
+    threshold: AnimationInfo.threesold,
+    triggerOnce: AnimationInfo.triggerOnce,
   });
 
   return (
-    <section ref={ref} className="flex flex-col gap-8 sm:gap-12 py-12">
+    <section ref={ref} className="container mx-auto section-container">
       {/* Header section */}
-      <div className="flex flex-col gap-2 max-w-2xl">
+      <div className="flex flex-col text-center sm:text-left gap-2 max-w-2xl">
         <p
           className={clsx(
             " tracking-wider uppercase transition-all duration-700",
@@ -49,7 +50,7 @@ export const AboutAppointmentSection = () => {
               alt="Dentist performing checkup"
               width={700}
               height={450}
-              className="w-full h-[320px] sm:h-[400px] lg:h-[440px] object-cover rounded-2xl"
+              className="w-full h-[320px] sm:h-[400px] lg:h-[440px] object-cover rounded-2xl hover:scale-125 transition-transform duration-500 ease-in-out"
               priority
             />
           </div>

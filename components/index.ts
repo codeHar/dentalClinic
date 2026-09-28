@@ -1,3 +1,3 @@
 export * from "./header";
-export * from "./hero-section";
-export * from "./services";
+export * from "./features/home/hero-section";
+export * from "./features/home/services";

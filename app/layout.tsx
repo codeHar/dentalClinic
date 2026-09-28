@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
 
 // Primary body font - clean and readable
 const inter = Inter({
@@ -36,7 +38,9 @@ export default function RootLayout({
       lang="en"
       className={cn("h-full antialiased", inter.variable, playfair.variable)}
     >
+      <Header />
       <body className="min-h-full flex flex-col font-sans">{children}</body>
+      <Footer />
     </html>
   );
 }

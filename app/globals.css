@@ -127,7 +127,13 @@
   /* Body uses Inter */
   html {
     font-family: var(--font-inter), system-ui, sans-serif;
+    overflow-x: clip;
   }
+
+  body {
+    @apply m-0 box-border overflow-x-clip;
+  }
+
   /* Headings - Playfair Display */
   h1,
   h2,
@@ -185,5 +191,17 @@
 }
 
 section {
-  @apply py-10 lg:py-20 xl:py-30 sm:px-0 px-4;
+  @apply py-[75px] lg:py-20 xl:py-30 sm:px-0 px-4;
+}
+
+.section-bg {
+  @apply bg-[#F7F9FB];
+}
+
+.section-container {
+  @apply flex flex-col gap-10 sm:gap-12;
+}
+
+.box-shadow-1 {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }

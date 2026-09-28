@@ -1,13 +1,19 @@
-import { Header, HeroSection, Services } from "@/components";
-import { AboutAppointmentSection } from "@/components/about-section";
+import {
+  AboutAppointmentSection,
+  Blogs,
+  HeroSection,
+  Services,
+  TestimonialSection,
+} from "@/components/features";
 
 export default function Home() {
   return (
-    <div className="container mx-auto">
-      <Header />
+    <div className="">
       <HeroSection />
       <Services />
       <AboutAppointmentSection />
+      <TestimonialSection />
+      <Blogs />
     </div>
   );
 }
